@@ -144,7 +144,7 @@ class RPCPy:
         Function: set_buttons(obj)
         Used to add buttons on RPC. Buttons must be passed inside an array
     """
-    def set_buttons(self: Self, obj: object) -> None:
+    def set_buttons(self: Self, obj: list[str]) -> None:
         self.RPC_OBJ["args"]["activity"].update({
             "buttons": obj
         })
